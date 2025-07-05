@@ -16,7 +16,18 @@ const mensagens = [
 "Você é mais raro que um bug que só acontece em produção 🐛✨",
 "Esta mensagem vem com garantia de 0% de utilidade 📜",
 "Você acabou de ativar o modo: Pessoa Interessante 🎯",
-"Se você fosse um emoji, seria este: 🌟"
+"Se você fosse um emoji, seria este: 🌟",
+"Você acaba de receber um abraço virtual 🤗",
+"Amor é o único caminho ❤️",
+"Você é a razão pela qual alguém sorri hoje 😊",
+"Uau! Uma pessoa incrível como você me honra com sua presença aqui! 🌟",
+"Você é tão especial que até o código ficou emocionado! 😍",
+"Atenção: esta mensagem contém 100% de carinho e 0% de spoiler sobre o jantar.",
+"Lembre-se: sua luz é única. Deixe-a brilhar sem medo!",
+"Sua jornada é especial. Aproveite cada passo, cada descoberta!",
+"Não deixe que um momento de prazer te tire a salvação eterna.",
+"Não torneis mal por mal, mas vencei o mal com o bem. - Romanos 12:21 📖",
+"Jesus te ama e quer que você o conheça pessoalmente. Ele é o caminho, a verdade e a vida. - João 14:6 ✝️",
 ];
 
 const carta = document.getElementById("carta");
