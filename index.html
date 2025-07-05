@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Carta Secreta</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<script src="js/particulas.js"></script>
+
+<div class="card closed" id="carta">
+<div class="cover" role="button" aria-label="Clique para abrir a carta secreta">Clique para abrir a carta secreta ✉️</div>
+<h1>Você invocou uma mensagem secreta! 🎩</h1>
+<p id="mensagem"></p>
+<div class="logo">por @felis 🔥</div>
+</div>
+
+<div class="wave-wrapper" aria-hidden="true">
+<div class="wave">
+<svg viewBox="0 0 2880 320" preserveAspectRatio="none">
+<defs>
+<linearGradient id="grad" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+<stop offset="0%" stop-color="#0ea5e9" />
+<stop offset="16.66%" stop-color="#6366f1" />
+<stop offset="33.33%" stop-color="#9333ea" />
+<stop offset="50%" stop-color="#0ea5e9" />
+<stop offset="66.66%" stop-color="#6366f1" />
+<stop offset="83.33%" stop-color="#9333ea" />
+<stop offset="100%" stop-color="#0ea5e9" />
+</linearGradient>
+</defs>
+<path d="M0,160 C480,320 960,0 1440,160 C1920,320 2400,0 2880,160 L2880,320 L0,320 Z" fill="url(#grad)"></path>
+</svg>
+</div>
+</div>
+<script src="js/mensagens.js"></script>
+
+</body>
+
+</html>

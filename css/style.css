@@ -1,0 +1,147 @@
+body {
+margin: 0;
+height: 100vh;
+background: #000000;
+font-family: 'Segoe UI', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+position: relative;
+}
+
+.particle {
+position: absolute;
+width: 2px;
+height: 2px;
+background: white;
+border-radius: 50%;
+opacity: 0.6;
+animation: floatRandom 10s infinite;
+}
+
+@keyframes floatRandom {
+0% {
+transform: translate(0, 0);
+}
+
+50% {
+transform: translate(var(--x), var(--y));
+}
+
+100% {
+transform: translate(0, 0);
+}
+}
+
+.card {
+background: #111827;
+color: #ffffff;
+padding: 40px;
+border-radius: 20px;
+max-width: 500px;
+width: 90%;
+text-align: center;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+transform-origin: top;
+transition: all 0.6s ease;
+cursor: pointer;
+position: relative;
+z-index: 10;
+overflow: hidden;
+}
+
+.card.closed {
+height: 100px;
+padding: 20px;
+transform: rotateX(0);
+}
+
+.card.open {
+height: auto;
+transform: rotateX(0);
+}
+
+.card h1,
+.card p,
+.card .logo {
+opacity: 0;
+transition: opacity 0.5s ease 0.2s;
+}
+
+.card.open h1,
+.card.open p,
+.card.open .logo {
+opacity: 1;
+}
+
+.card .cover {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(145deg, #1f2937, #374151);
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.2rem;
+font-weight: bold;
+color: #93c5fd;
+z-index: 11;
+transition: opacity 0.6s ease; 
+}
+
+.card.open .cover {
+opacity: 0;
+pointer-events: none;
+}
+
+.wave-wrapper {
+position: fixed;
+bottom: 0;
+width: 200%;
+height: 160px;
+z-index: 0;
+animation: floatY 6s ease-in-out infinite;
+pointer-events: none;
+}
+
+.wave {
+animation: waveSlide 8s linear infinite;
+width: 200%;
+height: 100%;
+}
+
+.wave svg {
+width: 100%;
+height: 100%;
+}
+
+.wave path {
+fill: url(#grad);
+filter: blur(2px) drop-shadow(0 0 12px rgba(60, 130, 255, 0.3));
+}
+
+@keyframes waveSlide {
+0% {
+transform: translateX(0);
+}
+
+100% {
+transform: translateX(-50%);
+}
+}
+
+@keyframes floatY {
+
+0%,
+100% {
+transform: translateY(0);
+}
+
+50% {
+transform: translateY(-10px);
+}
+}
